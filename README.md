@@ -2,4 +2,4 @@
 
 ## It's ChatGPT dialog:
  
-![](https://github.com//Record Expectimax1 143 436.gif)
+![](https://github.com/BestKora/Game2048ChatGPT/Record Expectimax1 143 436.gif)
