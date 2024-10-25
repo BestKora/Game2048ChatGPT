@@ -2,4 +2,4 @@
 
 ## It's ChatGPT dialog:
  
-![Начало](Dialog1.png)
+![](https://github.com//Record Expectimax1 143 436.gif)
