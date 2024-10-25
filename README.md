@@ -1,5 +1,5 @@
 # Game 2048 with AI algorithms Expectimax and Monte Carlo
 
-## It's Expectimax:
+## It's ChatGPT dialog:
  
-![Expectimax](Dialog1.png)
+![Начало](Dialog1.png)
