@@ -9,6 +9,7 @@
 
 ## It's Dialog with ChatGPT:
 ![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog1.png)
+![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog2.png)
 
 ```swift
 import SwiftUI
