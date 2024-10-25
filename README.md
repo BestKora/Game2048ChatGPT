@@ -10,7 +10,6 @@
 ## It's Dialog with ChatGPT:
 ![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog1.png)
 ![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog2.png)
-
 ```swift
 import SwiftUI
 
@@ -58,3 +57,108 @@ class GameViewModel: ObservableObject {
     }
 }
 ```
+![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog3.png)
+```swift
+struct GameView: View {
+    @StateObject private var viewModel = GameViewModel()
+
+    var body: some View {
+        VStack {
+            Text("2048")
+                .font(.largeTitle)
+                .padding()
+            
+            GridView(board: viewModel.board)
+                .padding()
+            
+            Button(action: {
+                // Implement restart functionality
+                viewModel.resetGame()
+            }) {
+                Text("Restart")
+                    .font(.title2)
+                    .padding()
+            }
+        }
+        .onAppear {
+            // Initialize game state
+        }
+    }
+}
+
+struct GridView: View {
+    let board: [[Int]]
+
+    var body: some View {
+        VStack(spacing: 10) {
+            ForEach(0..<4) { row in
+                HStack(spacing: 10) {
+                    ForEach(0..<4) { col in
+                        TileView(value: board[row][col])
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct TileView: View {
+    let value: Int
+
+    var body: some View {
+        Text(value == 0 ? "" : "\(value)")
+            .frame(width: 70, height: 70)
+            .background(Color.gray.opacity(0.4))
+            .cornerRadius(10)
+            .font(.title)
+            .foregroundColor(.black)
+    }
+}
+```
+![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog4.png)
+```swift
+struct GameView: View {
+    @StateObject private var viewModel = GameViewModel()
+
+    var body: some View {
+        VStack {
+            Text("2048")
+                .font(.largeTitle)
+                .padding()
+            
+            GridView(board: viewModel.board)
+                .padding()
+                .gesture(
+                    DragGesture()
+                        .onEnded { value in
+                            let horizontalAmount = value.translation.width
+                            let verticalAmount = value.translation.height
+                            
+                            if abs(horizontalAmount) > abs(verticalAmount) {
+                                if horizontalAmount > 0 {
+                                    viewModel.move(.right)
+                                } else {
+                                    viewModel.move(.left)
+                                }
+                            } else {
+                                if verticalAmount > 0 {
+                                    viewModel.move(.down)
+                                } else {
+                                    viewModel.move(.up)
+                                }
+                            }
+                        }
+                )
+            
+            Button(action: {
+                viewModel.resetGame()
+            }) {
+                Text("Restart")
+                    .font(.title2)
+                    .padding()
+            }
+        }
+     }
+}
+```
+![](https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog5.png)
