@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4970ADC2CCBCB19004655B3 /* Game2048ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970ADB2CCBCB19004655B3 /* Game2048ChatGPTApp.swift */; };
+		E4970AE02CCBCB1B004655B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4970ADF2CCBCB1B004655B3 /* Assets.xcassets */; };
+		E4970AE32CCBCB1B004655B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4970AE22CCBCB1B004655B3 /* Preview Assets.xcassets */; };
+		E4970AEA2CCBCB4E004655B3 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AE92CCBCB4E004655B3 /* GameView.swift */; };
+		E4970AEC2CCBCB5D004655B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AEB2CCBCB5D004655B3 /* Extensions.swift */; };
+		E4970AEE2CCBCB6B004655B3 /* OptimalDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AED2CCBCB6B004655B3 /* OptimalDirectionView.swift */; };
+		E4970AF02CCBCB79004655B3 /* AlgorithmMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AEF2CCBCB79004655B3 /* AlgorithmMenu.swift */; };
+		E4970AF22CCBCB85004655B3 /* AIGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AF12CCBCB85004655B3 /* AIGame.swift */; };
+		E4970AF42CCBCB90004655B3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AF32CCBCB90004655B3 /* GameViewModel.swift */; };
+		E4970AF62CCBCB9D004655B3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AF52CCBCB9C004655B3 /* Game.swift */; };
+		E4970AF82CCBCBA8004655B3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AF72CCBCBA8004655B3 /* Tile.swift */; };
+		E4970B002CCBCC11004655B3 /* Game2048ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970AFF2CCBCC11004655B3 /* Game2048ChatGPTTests.swift */; };
+		E4970B072CCBD65A004655B3 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970B062CCBD65A004655B3 /* TileView.swift */; };
+		E4970B092CCBD73A004655B3 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970B082CCBD73A004655B3 /* GridView.swift */; };
+		E4970B0C2CCBDA25004655B3 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970B0B2CCBDA25004655B3 /* Direction.swift */; };
+		E4970B0E2CCBDB11004655B3 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4970B0D2CCBDB11004655B3 /* Algorithm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4970B012CCBCC11004655B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4970AD02CCBCB19004655B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4970AD72CCBCB19004655B3;
+			remoteInfo = Game2048ChatGPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4970AD82CCBCB19004655B3 /* Game2048ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game2048ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4970ADB2CCBCB19004655B3 /* Game2048ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048ChatGPTApp.swift; sourceTree = "<group>"; };
+		E4970ADF2CCBCB1B004655B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4970AE22CCBCB1B004655B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4970AE92CCBCB4E004655B3 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E4970AEB2CCBCB5D004655B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E4970AED2CCBCB6B004655B3 /* OptimalDirectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptimalDirectionView.swift; sourceTree = "<group>"; };
+		E4970AEF2CCBCB79004655B3 /* AlgorithmMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmMenu.swift; sourceTree = "<group>"; };
+		E4970AF12CCBCB85004655B3 /* AIGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIGame.swift; sourceTree = "<group>"; };
+		E4970AF32CCBCB90004655B3 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		E4970AF52CCBCB9C004655B3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E4970AF72CCBCBA8004655B3 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		E4970AFD2CCBCC11004655B3 /* Game2048ChatGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Game2048ChatGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4970AFF2CCBCC11004655B3 /* Game2048ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048ChatGPTTests.swift; sourceTree = "<group>"; };
+		E4970B062CCBD65A004655B3 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		E4970B082CCBD73A004655B3 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		E4970B0B2CCBDA25004655B3 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		E4970B0D2CCBDB11004655B3 /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4970AD52CCBCB19004655B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4970AFA2CCBCC11004655B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4970ACF2CCBCB19004655B3 = {
+			isa = PBXGroup;
+			children = (
+				E4970ADA2CCBCB19004655B3 /* Game2048ChatGPT */,
+				E4970AFE2CCBCC11004655B3 /* Game2048ChatGPTTests */,
+				E4970AD92CCBCB19004655B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4970AD92CCBCB19004655B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4970AD82CCBCB19004655B3 /* Game2048ChatGPT.app */,
+				E4970AFD2CCBCC11004655B3 /* Game2048ChatGPTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4970ADA2CCBCB19004655B3 /* Game2048ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				E4970ADB2CCBCB19004655B3 /* Game2048ChatGPTApp.swift */,
+				E4970AEB2CCBCB5D004655B3 /* Extensions.swift */,
+				E4970B0A2CCBD9B9004655B3 /* Views */,
+				E4970B0F2CCBDBB9004655B3 /* Model */,
+				E4970AF32CCBCB90004655B3 /* GameViewModel.swift */,
+				E4970ADF2CCBCB1B004655B3 /* Assets.xcassets */,
+				E4970AE12CCBCB1B004655B3 /* Preview Content */,
+			);
+			path = Game2048ChatGPT;
+			sourceTree = "<group>";
+		};
+		E4970AE12CCBCB1B004655B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E4970AE22CCBCB1B004655B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4970AFE2CCBCC11004655B3 /* Game2048ChatGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4970AFF2CCBCC11004655B3 /* Game2048ChatGPTTests.swift */,
+			);
+			path = Game2048ChatGPTTests;
+			sourceTree = "<group>";
+		};
+		E4970B0A2CCBD9B9004655B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4970AE92CCBCB4E004655B3 /* GameView.swift */,
+				E4970B082CCBD73A004655B3 /* GridView.swift */,
+				E4970B062CCBD65A004655B3 /* TileView.swift */,
+				E4970AED2CCBCB6B004655B3 /* OptimalDirectionView.swift */,
+				E4970AEF2CCBCB79004655B3 /* AlgorithmMenu.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4970B0F2CCBDBB9004655B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4970AF52CCBCB9C004655B3 /* Game.swift */,
+				E4970AF72CCBCBA8004655B3 /* Tile.swift */,
+				E4970B0B2CCBDA25004655B3 /* Direction.swift */,
+				E4970B0D2CCBDB11004655B3 /* Algorithm.swift */,
+				E4970AF12CCBCB85004655B3 /* AIGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4970AD72CCBCB19004655B3 /* Game2048ChatGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4970AE62CCBCB1B004655B3 /* Build configuration list for PBXNativeTarget "Game2048ChatGPT" */;
+			buildPhases = (
+				E4970AD42CCBCB19004655B3 /* Sources */,
+				E4970AD52CCBCB19004655B3 /* Frameworks */,
+				E4970AD62CCBCB19004655B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Game2048ChatGPT;
+			productName = Game2048ChatGPT;
+			productReference = E4970AD82CCBCB19004655B3 /* Game2048ChatGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4970AFC2CCBCC11004655B3 /* Game2048ChatGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4970B032CCBCC11004655B3 /* Build configuration list for PBXNativeTarget "Game2048ChatGPTTests" */;
+			buildPhases = (
+				E4970AF92CCBCC11004655B3 /* Sources */,
+				E4970AFA2CCBCC11004655B3 /* Frameworks */,
+				E4970AFB2CCBCC11004655B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4970B022CCBCC11004655B3 /* PBXTargetDependency */,
+			);
+			name = Game2048ChatGPTTests;
+			productName = Game2048ChatGPTTests;
+			productReference = E4970AFD2CCBCC11004655B3 /* Game2048ChatGPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4970AD02CCBCB19004655B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E4970AD72CCBCB19004655B3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E4970AFC2CCBCC11004655B3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E4970AD72CCBCB19004655B3;
+					};
+				};
+			};
+			buildConfigurationList = E4970AD32CCBCB19004655B3 /* Build configuration list for PBXProject "Game2048ChatGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4970ACF2CCBCB19004655B3;
+			productRefGroup = E4970AD92CCBCB19004655B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4970AD72CCBCB19004655B3 /* Game2048ChatGPT */,
+				E4970AFC2CCBCC11004655B3 /* Game2048ChatGPTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4970AD62CCBCB19004655B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4970AE32CCBCB1B004655B3 /* Preview Assets.xcassets in Resources */,
+				E4970AE02CCBCB1B004655B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4970AFB2CCBCC11004655B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4970AD42CCBCB19004655B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4970AEA2CCBCB4E004655B3 /* GameView.swift in Sources */,
+				E4970AEC2CCBCB5D004655B3 /* Extensions.swift in Sources */,
+				E4970AF02CCBCB79004655B3 /* AlgorithmMenu.swift in Sources */,
+				E4970B092CCBD73A004655B3 /* GridView.swift in Sources */,
+				E4970AF22CCBCB85004655B3 /* AIGame.swift in Sources */,
+				E4970ADC2CCBCB19004655B3 /* Game2048ChatGPTApp.swift in Sources */,
+				E4970AEE2CCBCB6B004655B3 /* OptimalDirectionView.swift in Sources */,
+				E4970AF82CCBCBA8004655B3 /* Tile.swift in Sources */,
+				E4970AF42CCBCB90004655B3 /* GameViewModel.swift in Sources */,
+				E4970B072CCBD65A004655B3 /* TileView.swift in Sources */,
+				E4970B0E2CCBDB11004655B3 /* Algorithm.swift in Sources */,
+				E4970AF62CCBCB9D004655B3 /* Game.swift in Sources */,
+				E4970B0C2CCBDA25004655B3 /* Direction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4970AF92CCBCC11004655B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4970B002CCBCC11004655B3 /* Game2048ChatGPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4970B022CCBCC11004655B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4970AD72CCBCB19004655B3 /* Game2048ChatGPT */;
+			targetProxy = E4970B012CCBCC11004655B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4970AE42CCBCB1B004655B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4970AE52CCBCB1B004655B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4970AE72CCBCB1B004655B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Game2048ChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = QLY879YR3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besrkora.Game2048ChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4970AE82CCBCB1B004655B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Game2048ChatGPT/Preview Content\"";
+				DEVELOPMENT_TEAM = QLY879YR3Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besrkora.Game2048ChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4970B042CCBCC11004655B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QLY879YR3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besrkora.Game2048ChatGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game2048ChatGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Game2048ChatGPT";
+			};
+			name = Debug;
+		};
+		E4970B052CCBCC11004655B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QLY879YR3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besrkora.Game2048ChatGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game2048ChatGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Game2048ChatGPT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4970AD32CCBCB19004655B3 /* Build configuration list for PBXProject "Game2048ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4970AE42CCBCB1B004655B3 /* Debug */,
+				E4970AE52CCBCB1B004655B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4970AE62CCBCB1B004655B3 /* Build configuration list for PBXNativeTarget "Game2048ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4970AE72CCBCB1B004655B3 /* Debug */,
+				E4970AE82CCBCB1B004655B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4970B032CCBCC11004655B3 /* Build configuration list for PBXNativeTarget "Game2048ChatGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4970B042CCBCC11004655B3 /* Debug */,
+				E4970B052CCBCC11004655B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4970AD02CCBCB19004655B3 /* Project object */;
+}
