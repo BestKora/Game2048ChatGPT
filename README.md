@@ -2,4 +2,4 @@
 
 ## It's Expectimax:
  
-![Expectimax](Record Expectimax1 143 436.gif)
+![Expectimax](Dialog1.png)
