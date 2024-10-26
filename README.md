@@ -59,8 +59,7 @@ class GameViewModel: ObservableObject {
     }
 }
 ```
-###
-<img src="https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog3.png" width="670"/> 
+### <img src="https://github.com/BestKora/Game2048ChatGPT/blob/364d82ecc041215d2872a2b9e35a1073985c9efb/Dialog3.png" width="670"/> 
 
 ```swift
 struct GameView: View {
