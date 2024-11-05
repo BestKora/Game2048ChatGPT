@@ -129,7 +129,7 @@ struct AIGame {
             
         let smoothWeight: Double = 0.1
             let monoWeight: Double = 1.0
-            let emptyWeight: Double = 5.7
+            let emptyWeight: Double = 11.7
             let maxWeight: Double = 1.0
          //   let maxTileCornerWeight = 1.0
         
